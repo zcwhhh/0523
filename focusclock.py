@@ -3,7 +3,7 @@ import time
 def countdown(timer):
     while timer:
         mins, secs = divmod(timer, 60)
-        timeformat = '{:02d}:{:02d}'.format(mins, secs)
+        timeformat = '{:02d}:{:02d}'。format(mins, secs)
         print(timeformat, end='\r')
         time.sleep(1)
         timer -= 1
@@ -12,10 +12,10 @@ def countdown(timer):
 
 def focus_timer(focus_time, break_time):
     while True:
-        print("Focus for {} minutes".format(focus_time))
+        print("Focus for {} minutes"。format(focus_time))
         countdown(focus_time * 60)
 
-        print("Take a break for {} minutes".format(break_time))
+        print("Take a break for {} minutes"。format(break_time))
         countdown(break_time * 60)
 
 if __name__ == '__main__':
